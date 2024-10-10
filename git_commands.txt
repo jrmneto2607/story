@@ -1,3 +1,5 @@
+/// COMANDOS BASICOS ///
+
 git init -> Inicializa o git na pasta selecionada
 
 git status -> mostra se tem arquivos preparados para o commit (cor verde) e arquivos que estão fora do commit (cor vermelha)
@@ -6,3 +8,31 @@ git add "<arquivo>" -> adiciona um arquivo ao commit
 git add . -> adiciona todos os arquivos e pastas que ainda estao fora do commit
 
 git commit -m "<mensagem>" -> adiciona um novo commit ao repositorio
+
+git diff <arquivo> -> compara o arquivo atual com o do ultimo commit
+
+git checkout <arquivo> -> Da um rollback do arquivo para o ultimo commit
+
+//// TRABALHANDO COM GITHUB ////
+--- LOGO APOS CRIAR UM REPOSITORIO NO SITE ---
+--- Copie a url do repositorio: https://github.com/jrmneto2607/story.git ---
+
+git remote add <nome do remote - padrao: origin> <url do repositorio> -> cria uma conexão do git local com o repositorio online
+
+git branch -M <nome do branch - padrao: main>
+
+git push -u <nome do remote> <nome do branch> -> faz uma copia dos arquivos locais no branch selecionado do repositorio online 
+
+
+
+/// Mantendo os segredos ///
+
+
+git rm --cached <arquivo> ou . (todos) -> remove arquivos do cache (git status) que estao prontos para ser commitados
+
+[arquivo]:  .gitignore -> Usado para dizer quais arquivos e pastas você nao deseja que sejam mandadas ao repositorio online.
+~ Uma linha para cada arquivo ou pasta
+~ pode usar # para inserir comentarios
+~ pode usar *.<extensão> para dizer que quer todos arquivos daquela estensão
+
+
