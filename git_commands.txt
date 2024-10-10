@@ -35,4 +35,4 @@ git rm --cached <arquivo> ou . (todos) -> remove arquivos do cache (git status) 
 ~ pode usar # para inserir comentarios
 ~ pode usar *.<extensão> para dizer que quer todos arquivos daquela estensão
 
-
+// Arquivos pre-moldados pelo proprio github: https://github.com/github/gitignore
