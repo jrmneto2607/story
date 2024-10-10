@@ -1,0 +1,8 @@
+git init -> Inicializa o git na pasta selecionada
+
+git status -> mostra se tem arquivos preparados para o commit (cor verde) e arquivos que estão fora do commit (cor vermelha)
+
+git add "<arquivo>" -> adiciona um arquivo ao commit
+git add . -> adiciona todos os arquivos e pastas que ainda estao fora do commit
+
+git commit -m "<mensagem>" -> adiciona um novo commit ao repositorio
