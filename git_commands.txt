@@ -4,6 +4,8 @@ git init -> Inicializa o git na pasta selecionada
 
 git status -> mostra se tem arquivos preparados para o commit (cor verde) e arquivos que estão fora do commit (cor vermelha)
 
+git log -> mostra o historico de commits <para sair aperte Q no teclado>
+
 git add "<arquivo>" -> adiciona um arquivo ao commit
 git add . -> adiciona todos os arquivos e pastas que ainda estao fora do commit
 
@@ -13,13 +15,16 @@ git diff <arquivo> -> compara o arquivo atual com o do ultimo commit
 
 git checkout <arquivo> -> Da um rollback do arquivo para o ultimo commit
 
+
 //// TRABALHANDO COM GITHUB ////
 --- LOGO APOS CRIAR UM REPOSITORIO NO SITE ---
 --- Copie a url do repositorio: https://github.com/jrmneto2607/story.git ---
 
 git remote add <nome do remote - padrao: origin> <url do repositorio> -> cria uma conexão do git local com o repositorio online
 
-git branch -M <nome do branch - padrao: main>
+git branch -M <nome do branch - padrao: main> -> cria um novo branch para o projetos
+
+git checkout <branch> -> seleciona o branch desejado
 
 git push -u <nome do remote> <nome do branch> -> faz uma copia dos arquivos locais no branch selecionado do repositorio online 
 
@@ -36,3 +41,9 @@ git rm --cached <arquivo> ou . (todos) -> remove arquivos do cache (git status) 
 ~ pode usar *.<extensão> para dizer que quer todos arquivos daquela estensão
 
 // Arquivos pre-moldados pelo proprio github: https://github.com/github/gitignore
+
+
+
+/// Clonando projetos de outras pessoas ///
+
+git clone <repositorio URL>
